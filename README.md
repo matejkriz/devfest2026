@@ -4,6 +4,8 @@ Slides and resources for Matěj Kříž's talk, **Local-first with Evolu**.
 
 Website: https://devfest2026.matejkriz.cz
 
+Vercel URL: https://devfest2026-blue.vercel.app
+
 A static site built with HTML and CSS. No dependencies, JavaScript, or build step.
 
 ## Run locally
@@ -35,5 +37,13 @@ PDF preserves the slide layout and works without Keynote or PowerPoint. Animatio
 Import this repository into Vercel. `vercel.json` selects `public` as the output directory. Use the Other framework preset with no build or install command.
 
 Connect `devfest2026.matejkriz.cz` in the Vercel project's domain settings. Pushes to `main` deploy automatically once the Git integration is connected.
+
+The project and Git integration are connected. The custom domain still needs this record at the authoritative DNS provider, Forpsi:
+
+| Type | Name | Target |
+| --- | --- | --- |
+| CNAME | `devfest2026` | `cname.vercel-dns.com` |
+
+Replace a conflicting record for this subdomain if one exists. Keep unrelated records and the domain's nameservers unchanged. The Vercel URL works while the DNS change is pending.
 
 The illustration comes from the original presentation. The linked articles and videos belong to their respective authors.
