@@ -28,6 +28,8 @@ a:focus-visible { outline: 3px solid var(--mint); outline-offset: 6px; }
 .site-header nav a { padding: 12px 0; }
 .site-header nav span { margin-left: 9px; color: var(--mint); }
 .site-header nav a:hover, .site-footer a:hover { color: var(--mint); }
+.github-link { display: inline-flex; align-items: center; gap: 9px; }
+.github-logo { display: block; flex-shrink: 0; }
 .hero { display: grid; grid-template-columns: 1.18fr 1fr; min-height: 706px; position: relative; align-items: center; overflow: hidden; }
 .hero-copy { position: relative; z-index: 1; padding: 58px 0 66px; }
 .eyebrow { margin: 0 0 25px; color: var(--muted); font-size: 12px; line-height: 1.5; font-weight: 400; letter-spacing: 1.5px; text-transform: uppercase; }
@@ -62,11 +64,9 @@ h3 { margin: 10px 0 0; font-size: clamp(21px, 2.05vw, 28px); font-weight: 400; l
 .resource:hover .resource-arrow { transform: translate(3px, -3px); }
 .list-note { color: var(--muted); font-size: 12px; line-height: 1.7; margin: 22px 0 0 82px; }
 .site-footer { border-top: 1px solid var(--line); margin-top: 82px; min-height: 122px; display: flex; align-items: center; justify-content: space-between; gap: 24px; font-size: 12px; color: var(--muted); }
-.site-footer .footer-name { color: var(--paper); font-weight: 700; font-size: 14px; }
 .site-footer p { margin: 0; line-height: 1.6; }
 .site-footer p span { padding: 0 10px; color: #6a9379; }
 .site-footer a { padding: 12px 0; }
-.site-footer a > span { color: var(--mint); margin-left: 5px; }
 
 @media (min-width: 1440px) { .page { padding: 0 90px; } }
 @media (max-width: 1050px) {
@@ -105,9 +105,8 @@ h3 { margin: 10px 0 0; font-size: clamp(21px, 2.05vw, 28px); font-weight: 400; l
   .resource-arrow { font-size: 23px; padding-top: 27px; }
   .video-arrow { font-size: 14px; padding-top: 31px; padding-right: 1px; }
   .list-note { margin-left: 36px; font-size: 11px; }
-  .site-footer { margin-top: 48px; padding: 26px 0 30px; flex-wrap: wrap; gap: 10px 20px; min-height: 0; }
-  .site-footer p { order: 3; width: 100%; font-size: 11px; }
-  .site-footer > a:last-child { margin-left: auto; font-size: 11px; }
+  .site-footer { margin-top: 48px; padding: 26px 0 30px; flex-direction: column; align-items: flex-start; gap: 6px; min-height: 0; }
+  .site-footer p, .site-footer a { font-size: 11px; }
 }
 @media (max-width: 374px) {
   .page { padding: 0 18px; }
