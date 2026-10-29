@@ -35,7 +35,6 @@ a:focus-visible { outline: 3px solid var(--mint); outline-offset: 6px; }
 h1 { margin: 0; font-size: clamp(56px, 6.6vw, 94px); line-height: 1.04; letter-spacing: -3.5px; font-weight: 700; text-transform: uppercase; }
 .title-dot { color: var(--mint); }
 .subtitle { margin: 25px 0 0; color: var(--mint); font-size: clamp(25px, 2.6vw, 37px); line-height: 1.2; letter-spacing: -1px; }
-.intro { margin: 29px 0 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
 .download-button { width: fit-content; min-height: 58px; padding: 0 22px; margin-top: 32px; display: inline-flex; align-items: center; gap: 20px; color: var(--forest); background: var(--mint); border: 1px solid var(--mint); font-size: 15px; font-weight: 700; transition: background .18s ease, transform .18s ease; }
 .download-button:hover { background: #a5ffd4; transform: translateY(-2px); }
 .download-button:focus-visible { outline-color: var(--paper); }
@@ -72,7 +71,6 @@ h3 { margin: 10px 0 0; font-size: clamp(21px, 2.05vw, 28px); font-weight: 400; l
   .hero { min-height: 640px; grid-template-columns: 1.35fr 1fr; }
   h1 { letter-spacing: -2.5px; }
   .hero-art img { width: 136%; right: -25%; top: 73px; }
-  .intro { font-size: 14px; }
 }
 @media (max-width: 720px) {
   html { scroll-padding-top: 24px; }
@@ -85,7 +83,6 @@ h3 { margin: 10px 0 0; font-size: clamp(21px, 2.05vw, 28px); font-weight: 400; l
   .hero-copy { padding: 47px 0 0; }
   h1 { font-size: clamp(47px, 10.2vw, 73px); letter-spacing: -2.3px; line-height: 1.04; }
   .subtitle { margin-top: 21px; font-size: 27px; letter-spacing: -.7px; }
-  .intro { margin-top: 22px; font-size: 14px; line-height: 1.65; }
   .download-button { margin-top: 26px; min-height: 56px; padding: 0 20px; }
   .hero-art { height: 330px; align-self: stretch; margin: 5px -24px 0; overflow: hidden; }
   .hero-art img { width: 350px; top: -16px; right: max(0px, calc((100% - 420px) / 2)); }
@@ -110,7 +107,6 @@ h3 { margin: 10px 0 0; font-size: clamp(21px, 2.05vw, 28px); font-weight: 400; l
   .event span { margin-left: 3px; }
   h1 { font-size: 44px; }
   .subtitle { font-size: 25px; }
-  .desktop-break { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
