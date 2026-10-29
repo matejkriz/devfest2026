@@ -41,6 +41,9 @@ h1 { margin: 0; font-size: clamp(56px, 6.6vw, 94px); line-height: 1.04; letter-s
 .download-button:focus-visible { outline-color: var(--paper); }
 .button-format { font-size: 11px; line-height: 1; padding-left: 20px; border-left: 1px solid #377856; font-weight: 400; letter-spacing: .7px; }
 .download-note { margin: 12px 0 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.feedback { margin: 25px 0 0; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.feedback a { color: var(--mint); text-decoration: underline; text-underline-offset: 4px; }
+.feedback a:hover { color: var(--paper); }
 .hero-art { align-self: stretch; position: relative; min-width: 0; }
 .hero-art img { position: absolute; display: block; width: 118%; max-width: none; height: auto; right: -13%; top: 38px; }
 .resources { padding: 68px 0 0; border-top: 1px solid var(--line); }
