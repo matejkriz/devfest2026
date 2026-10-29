@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://devfest2026.matejkriz.cz/sitemap.xml
