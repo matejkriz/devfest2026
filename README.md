@@ -6,7 +6,9 @@ Website: https://devfest2026.matejkriz.cz
 
 Vercel URL: https://devfest2026-blue.vercel.app
 
-A static site built with HTML and CSS. No dependencies, JavaScript, or build step.
+A static site built with HTML and CSS. No dependencies or build step. Vercel Web Analytics measures page views with a deferred script.
+
+Web Analytics is enabled for this project on the Hobby plan. Its initialization lives in `public/analytics.js`, so the existing Content Security Policy can keep blocking inline scripts. The tracking script is served by Vercel at `/_vercel/insights/script.js`; it is unavailable in the local Python preview.
 
 ## Run locally
 
